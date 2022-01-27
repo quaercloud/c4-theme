@@ -1,0 +1,29 @@
+' AWS
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist
+' Include main AWSCommon and then sprite files
+!includeurl AWSPuml/AWSCommon.puml
+!includeurl AWSPuml/AWSC4Integration.puml
+
+!includeurl AWSPuml/ApplicationIntegration/all.puml
+!includeurl AWSPuml/Compute/all.puml
+!includeurl AWSPuml/Containers/all.puml
+!includeurl AWSPuml/Database/all.puml
+!includeurl AWSPuml/MachineLearning/all.puml
+!includeurl AWSPuml/NetworkingContentDelivery/all.puml
+!includeurl AWSPuml/SecurityIdentityCompliance/all.puml
+!includeurl AWSPuml/Serverless/all.puml
+!includeurl AWSPuml/Storage/all.puml
+
+' Kubernetes
+!define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
+
+' global definition
+!includeurl KubernetesPuml/kubernetes_Common.puml
+!includeurl KubernetesPuml/kubernetes_Context.puml
+!includeurl KubernetesPuml/kubernetes_Simplified.puml
+
+' k8s specific components
+!includeurl KubernetesPuml/OSS/KubernetesPod.puml
+!includeurl KubernetesPuml/OSS/KubernetesPsp.puml
+!includeurl KubernetesPuml/OSS/KubernetesPv.puml
+!includeurl KubernetesPuml/OSS/KubernetesPvc.puml
